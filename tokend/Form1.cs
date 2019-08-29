@@ -76,17 +76,6 @@ namespace tokend
         //------------------------end 无边框窗体拖动-----------------------------------
         #endregion
 
-        private void ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-
         private void Button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();

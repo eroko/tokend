@@ -78,14 +78,17 @@ namespace tokend
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
+            //退出程序
             Application.Exit();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            string str = System.AppDomain.CurrentDomain.FriendlyName;
+            //string str = System.AppDomain.CurrentDomain.FriendlyName;
             //MessageBox.Show(str);
-            System.Diagnostics.Process.Start(str);
+            //System.Diagnostics.Process.Start(str);
+            //上面的写法在Win7上面可能会有点问题，换一种思路试一试
+            System.Diagnostics.Process.Start(System.Reflection.Assembly.GetExecutingAssembly().Location);            
         }
 
         private void Button1_MouseEnter(object sender, EventArgs e)
